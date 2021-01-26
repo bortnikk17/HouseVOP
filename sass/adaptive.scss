@@ -1,0 +1,698 @@
+@media screen and(max-width:1200px){
+
+/*Header*/
+.header__inner{
+    width: 900px;
+    height: 70px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+    
+/*Apartments*/
+.apartments{
+    width: 100%;
+    min-height: 850px;
+}
+.apartments__inner{
+    width: 900px;
+    min-height: 850px;
+}
+
+.apartments__info{
+    width: 900px;
+    height: 600px;
+}
+.apartments__info_row{
+    min-height: 270px;
+}
+.apartments__info_card{
+    width: 435px;
+    height: 270px;
+}
+
+/*Watch*/
+.watch{
+    width: 100%;
+    height: 700px;
+}
+.watch__inner{
+    width: 900px;
+    height: 700px;
+}
+.watch__container{
+    width: 900px;
+    margin-top: 150px;
+    display: block;
+}
+.watch__info{
+    width: 100%;
+    height: auto;
+    
+}
+.watch__data{
+    width: 550px;
+    height: 50px;
+    margin:0 auto;
+    margin-bottom: 35px;
+    margin-top: 65px;
+}
+
+.watch__submit{
+    width: 550px;
+    height: 50px;
+    margin:0 auto;
+}
+
+/*Video*/
+
+.video{
+    height: 700px;
+}
+video{
+    display: block;
+    width: 620px;
+    height: 550px;
+}
+
+/*Map*/
+
+.map{
+    width:100%;
+    height: 600px;
+}
+.map__inner{
+    width: 900px;
+    height: 600px;
+}
+.map__container{
+    width: 900px;
+    height: 260px;
+}
+
+    /*Question*/
+
+.question{
+    width: 100%;
+    min-height: 400px; 
+}
+.question__inner{
+    width:900px;
+    min-height: 400px;
+}
+
+.question__form{
+    width: 900px;
+    display: block;
+    text-align: center;
+}
+.question__submit_text{
+    width: 255px;
+    margin:0 auto;
+    margin-bottom: 30px;
+
+}
+    
+/*Footer*/
+
+.footer__inner{
+    width: 900px;
+}
+
+
+}
+
+@media screen and(max-width:980px){
+    /*Startpage*/
+.startpage{
+    width: 100%;
+    min-height: 1050px;
+    background-image: url("../images/dest/phone.png");
+    background-size: 100% 100%;
+    border-top: 1px solid rgba(255,255,255,0.01);
+}
+
+.startpage__info{
+    width: 750px;
+    min-height: 470px;
+    margin:0 auto;
+    margin-top: 190px;
+    overflow: hidden;
+}
+.startpage__title{
+    width: 750px;
+    height: 128px;
+    color:$secondary;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 64px;
+    text-align: center; 
+    margin-bottom: 90px;
+}
+.startpage__icon{
+    width: 65px;
+    height: 65px;
+    overflow: hidden;
+    margin:0 auto;
+    margin-bottom: 200px;
+    animation: up .8s infinite;
+}
+.startpage__icon_svg{
+    width: 65px;
+    height: 65px;
+    }
+@keyframes up{
+    0%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: -10px;
+        margin-bottom: 210px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+.startpage__contacts{
+    width: 100%;
+    height:80px;
+    display: block;
+    justify-content: space-between;
+}
+.startpage__contact{
+    width: 400px;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-left: 170px;
+    display: flex;
+}
+.startpage__contact_icon{
+    margin-right: 14px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.startpage__contact_info{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 21px;
+    color:$third;
+}
+    .startpage__contact_svg{
+        width: 30px;
+        height: 30px;
+    }
+
+/*Header*/
+.header{
+    width: 100%;
+    height: 140px;
+    margin-top: 0px;
+    padding-top: 30px;
+}
+.header__inner{
+    width: 100%;
+    padding: 0px 0px;
+    height: 100px;
+    margin:0 auto;
+    display: block;
+    justify-content: space-between;
+}
+.header__logo{
+    width:220px;
+    height: 80px;
+    overflow: inherit;
+    margin:0 auto;
+}
+p.logo__name{
+    width: 100%;
+    height: 45px; 
+    font-family: PostNoBillsJaffna-SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 54px;
+    color: $third; 
+    margin-bottom: 15px;
+    text-align: center;
+}
+p.logo__subtitle{
+    width: 100%;
+    height: 20px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.2em;  
+    color:$third;
+    text-align: center; 
+}
+
+.header__menu{
+    padding:0px 20px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    background-color: $primary;
+}
+.header__menu_link{
+    height: 100px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 100px;
+    letter-spacing: 0.05em;
+    color: $third;
+    text-decoration: none;
+    transition: .3s;
+}
+    
+    /*About*/
+.about{
+    width: 100%;
+    min-height: 460px;
+    overflow: hidden;
+    position: relative;
+}
+.about__info{
+   width: 900px;
+    min-height: 180px;
+    margin:0 auto;
+    margin-top: 140px;
+    overflow: hidden;
+    display: block;
+    justify-content: space-between;
+}
+.about__card{
+    width: 900px;
+    height: 500px;
+    text-align: center;
+}
+.about__card_svg{
+    width: 220px;
+    height: 220px;
+    margin-bottom: 53px;
+    transition: .3s;
+}
+.about__card_svg:hover{
+    width: 230px;
+    height: 230px;
+    margin-bottom: 46px;
+    transition: .3s;
+}
+.about__card_text{
+    width: 700px;
+   font-family: Raleway;
+   font-style: normal;
+   font-weight:300;
+   font-size: 38px;
+   line-height: 38px;
+   text-align: center; 
+   color:$third;
+    margin:0 auto;
+}
+    
+    /*Apartments*/
+.apartments{
+    width: 100%;
+    min-height: 910px;
+    overflow: hidden;
+    position: relative;
+}
+.apartments__inner{
+    width: 900px;
+    min-height: 910px;
+    margin:0 auto;
+    border-top:1px solid rgba(0,0,0,0.01);
+}
+.apartments__title{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 58px;
+    color:$secondary;
+    margin-bottom: 150px;
+}
+.apartments__info{
+    width: 900px;
+    min-height: 2500px;
+}
+.apartments__info_row{
+    width: 100%;
+    min-height: 320px;
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.apartments__info_card{
+    width: 735px;
+    height: 520px;
+    position: relative;
+    transition: .5s;
+    margin:0 auto;
+    margin-bottom: 100px;
+}
+.aprtments__info_img{
+    width: 100%;
+    height: 100%;
+}
+.apartments__info_text{
+    position: absolute;
+    left:50px;
+    bottom: 50px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 38px;
+    color:$third;
+
+}
+.apartments__info_card:hover{
+    margin-top: -10px;
+    transition: .5s;
+}
+
+    /*Watch*/
+.watch{
+    width: 100%;
+    min-height: 860px;
+    background-image: url("../images/dest/watch.png");
+    background-size: 100% 100%;
+    border-top: 1px solid rgba(255,255,255,0.001);
+}
+.watch__inner{
+    border-top: 1px solid rgba(255,255,255,0.001);
+    width: 900px;
+    min-height: 560px;
+    margin:0 auto;
+}
+.watch__container{
+    width: 900px;
+    min-height: 210px;
+    margin-top: 180px;
+    display: block;
+    justify-content: space-between;
+    overflow: hidden;
+    margin:0 auto;
+}
+.watch__info{
+    width: 100%;
+    height: auto;;
+    
+}
+.watch__info_title{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 58px;
+    color:$secondary;
+    margin-bottom: 45px;
+}
+.watch__info__subtitle{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 38px;
+    color:$third;
+}
+.watch__data{
+    width: 900px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    margin-top: 65px;
+}
+.watch__input{
+    width: 395px;
+    height: 70px;
+    text-align: center;
+    padding:0px 10px;
+    background-color: rgba(255,255,255,0.2);
+    border:none;
+    color:$third;
+    font-size: 34px;
+    font-weight: normal;
+    border-radius: 0;
+}
+input::-webkit-input-placeholder { color:$third; }
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.watch__submit{
+    width: 900px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.watch__submit_text{
+    width: 395px;
+    margin-top: 10px;
+    height: 52px;
+    ont-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 22px;
+    color: $third;
+    text-align: center;
+}
+.watch__btn{
+    width: 395px;
+    height: 70px;
+    font-size: 34px;
+    background-color: $secondary;
+    color:$third;
+    border:none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .4s;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+.watch__btn:hover{
+   border:1px solid $secondary;
+    background-color: $primary;
+    transition: .4s;
+}
+    
+    /*Video*/
+
+.video{
+    width: 100%;
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+}
+video{
+    display: block;
+    width: 800px;
+    height: 700px;
+    margin:0 auto;
+    cursor: pointer;
+}
+    
+    /*Map*/
+
+.map{
+    width:100%;
+    height: 700px;
+    border-top: 1px solid rgba(255,255,255,0.001);
+    position: relative;
+}
+
+.map__title{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 58px;
+    color:$secondary;
+    margin-bottom: 100px;
+}
+.map__inner{
+    width: 900px;
+    height: 700px;
+    border-top: 1px solid rgba(255,255,255,0.001);
+    margin: 0 auto;
+}
+.map__container{
+    width: 900px;
+    height: 360px;
+}
+    /*Question*/
+
+.question{
+    width: 100%;
+    min-height: 600px; 
+}
+.question__inner{
+    width: 900px;
+    min-height: 600px;
+    margin:0 auto;
+    border-top: 1px solid rgba(255,255,255,0.001); 
+}
+.question__title{
+    display: block;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 58px;
+    color:$secondary;
+}
+.question__form{
+    display: block;
+    width: 900px;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.question__submit_text{
+    width: 395px;
+    margin-top: 10px;
+    height: 42px;
+    ont-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 22px;
+    color: $third;
+    text-align: center;
+}
+    .question__top{
+        margin-top:60px;
+        margin-bottom:60px;
+        
+        
+    }
+    
+    /*Footer*/
+
+.footer{
+    width: 100%;
+    height: 335px;
+    border-top: 1px solid rgba(255,255,255,0.001);
+    padding: 65px 0px;
+    background-color: #2D343C;
+}
+.footer__inner{
+    width: 900px;
+    height: 205px; 
+    border-top: 1px solid rgba(255,255,255,0.001);
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo{
+    width:220px;
+    height: 80px;
+    overflow: hidden;
+}
+p.footer__logo_name{
+    width: 100%;
+    height: 45px; 
+    font-family: PostNoBillsJaffna-SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 54px;
+    color: $third; 
+    margin-bottom: 15px;
+    text-align: center;
+}
+p.footer__logo_subtitle{
+    width: 100%;
+    height: 20px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.2em;  
+    color:$third;
+    text-align: center; 
+}
+.footer__menu{
+    display: none;
+}
+.footer__contacts{
+    width: 450px;
+    height: 155px;
+    display: block;
+}
+
+.footer__contact{
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 24px;
+letter-spacing: 0.05em;
+color:$third;
+margin-bottom: 15px;
+}
+.footer__messeges{
+    width: 400px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+k{
+    color:$secondary;
+    font-weight: 600;
+}
+.v{
+    position: absolute;
+    left:13%;
+    top:100;
+}
+.iv{
+    position: absolute;
+    left:70%;
+    top:200px;
+}
+.iii{
+    position: absolute;
+    left:10%;
+    top:80px;
+}
+.ii{
+    position: absolute;
+    left:73%;
+    top:100px;
+}
+
+    .yt{
+        width:70px;
+        height:60px;
+    }
+    .vk{
+        width:75px;
+        height:60px;
+    }
+    .f{
+       width:35px;
+        height:55px;
+    }
+    .inst{
+        width:60px;
+        height:60px;
+    }
+}

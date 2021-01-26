@@ -1,0 +1,148 @@
+include mixin.pug
+
+mixin contact(icon,info)
+ .startpage__contact
+  .startpage__contact_icon
+   img(src="images/dest/"+icon+".svg" alt=icon class="startpage__contact_svg") 
+  .startpage__contact_info= info
+  
+mixin card(icon,info)
+ .about__card
+  img(src="images/dest/"+icon+".svg" alt=icon class="about__card_svg")
+  p.about__card_text= info
+  
+mixin app(icon, info,icon2,info2)
+ .apartments__info_row
+  a(href="#")
+   .apartments__info_card
+    img(src="images/dest/"+icon+".png" alt=icon class="aprtments__info_img")
+    p.apartments__info_text= info
+  a(href="#")
+   .apartments__info_card
+    img(src="images/dest/"+icon2+".png" alt=icon2 class="aprtments__info_img")
+    p.apartments__info_text= info2
+
+
+html
+ head
+  title HouseVOP
+  link(rel="stylesheet" href="css/app.min.css")
+  meta(charset="utf-8")
+  meta(name="format-detection" content="telephone=no")
+ body
+  .wrapper
+   .startpage
+    .header
+     .header__inner
+      .header__logo
+       p.logo__name HouseVOP
+       p.logo__subtitle жилой комплекс 
+      .header__menu
+       a(href="#").header__menu_link О комплексе
+       a(href="#").header__menu_link Район
+       a(href="#").header__menu_link Каталог квартир
+       a(href="#").header__menu_link Ипотека
+       a(href="#").header__menu_link Контакты
+       
+    .startpage__info
+     .startpage__title Жилой комплекс в историческом центре
+     .startpage__icon
+      img(src="images/dest/mouse.svg" alt="mouse_icon" class="startpage__icon_svg")
+     .startpage__contacts
+      +contact('map','Наб. реки Фонтанки 10-15')
+      +contact('phone','8 (812) 123-45-67')
+      
+   .about
+    img(src="images/dest/2.png" alt="ii").ii
+    .about__info
+     +card('bench','Рядом исторические парки и скверы')
+     +card('build','Полностью обустроенный')
+     +card('fountain','10 фонтанов на территории')
+     +card('bicycle','6 км велодорожек')
+     
+   .apartments
+    img(src="images/dest/3.png" alt="iii").iii 
+    .apartments__inner
+     .apartments__title Наши квартиры
+     .apartments__info
+      +app('app',"Лофт - 3 этажа", 'app2','Лофт - 2 этажа')
+      +app('app',"Лофт - 3 этажа", 'app2','Лофт - 2 этажа')
+      
+   .watch
+    .watch__inner
+     .watch__container
+      .watch__info
+       .watch__info_title Хотите посмотреть?
+       .watch__info__subtitle Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. 
+      .watch__info
+       form.watch__form
+        .watch__data
+         input(type="text" placeholder="Ваше имя").watch__input
+         input(type="text" placeholder="Ваш телефон").watch__input
+        .watch__submit
+         p.watch__submit_text *Мы никому не передаем ваши данные.  И не сохраняем ваш номер в базу.
+         input(type="submit" value="Помотреть район").watch__btn
+         
+   .video 
+    img(src="images/dest/4i.png" alt="iv").iv 
+    video(src="" poster="images/dest/video.png" autoplay)
+    
+   .map
+    img(src="images/dest/4.png" alt="v").v 
+    .map__inner
+     .map__title Район на карте
+     .map__container
+      iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10153.519645772818!2d30.464567542076086!3d50.489886657498914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cded9eb78cd9%3A0xa7b1cd418ec15697!2z0JrQsNC80LXQu9C40Y8!5e0!3m2!1sru!2sua!4v1611653064032!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0")
+      
+   .question
+    .question__inner
+     .question__title Есть вопросы
+      form.question__form
+       p.question__submit_text *Мы никому не передаем ваши данные.  И не сохраняем ваш номер в базу.
+       input(type="text" placeholder="Ваше имя" class="question__top").watch__input
+       input(type="text" placeholder="Ваш телефон" class="question__top").watch__input
+       input(type="submit" value="Помотреть район").watch__btn
+       
+   .footer
+    .footer__inner
+     .footer__logo
+      p.footer__logo_name HouseVOP
+      p.footer__logo_subtitle жилой комплекс
+     .footer__menu
+      a(href="#").footer__menu_link О комплексе
+      a(href="#").footer__menu_link Район
+      a(href="#").footer__menu_link Каталог квартир
+      a(href="#").footer__menu_link Ипотека
+      a(href="#").footer__menu_link Контакты
+     .footer__contacts
+      p.footer__contact Адрес: Наб. реки Фонтанки 10-15
+      p.footer__contact Телефон: 8 (812) 123-45-67
+      p.footer__contact Отдел продаж: 10:00 - 20:00
+      p.footer__contact!="E-mail: <k>vip@housevip.ru</k>" 
+      .footer__messeges
+       a(href="").footer__messege
+        img(src="images/dest/yt.svg" alt="messege__icon").yt
+       a(href="").footer__messege
+        img(src="images/dest/vk.svg" alt="messege__icon").vk
+       a(href="").footer__messege
+        img(src="images/dest/f.svg" alt="messege__icon").f
+       a(href="").footer__messege
+        img(src="images/dest/inst.svg" alt="messege__icon").inst
+        
+
+      
+       
+       
+      
+    
+    
+    
+
+     
+    
+      
+  
+  
+
+
+  
